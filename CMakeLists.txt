@@ -143,9 +143,9 @@ set(wfa2lib_SOURCE
   alignment/score_matrix.c
 )
 
-add_library(wfa2_static
-    ${wfa2lib_SOURCE}
-    )
+#add_library(wfa2_static
+#    ${wfa2lib_SOURCE}
+#    )
 add_library(wfa2 SHARED ${wfa2lib_SOURCE})
 #set_target_properties(wfa2_static PROPERTIES OUTPUT_NAME wfa2)
 set_target_properties(wfa2 PROPERTIES SOVERSION 0)
